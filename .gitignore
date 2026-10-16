@@ -1,0 +1,21 @@
+# Python scripts and build tools
+*.py
+*.pyc
+__pycache__/
+
+# All loose PNG/JPG/HTML in root
+/*.png
+/*.jpg
+/*.jpeg
+vertex_page.html
+*.html_bak
+
+# Folders with raw source materials
+esame_unzipped/
+vertex_assets/
+*.ttf
+PORTFOLIO_MARTINA_TAGLIETTI_A4.pdf
+
+# OS files
+Thumbs.db
+.DS_Store

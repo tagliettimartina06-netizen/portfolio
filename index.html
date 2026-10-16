@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martina Taglietti · Portfolio Grafica & UI/UX Design</title>
+  <meta name="description" content="Portfolio di Martina Taglietti - Graphic Designer & UI/UX. Branding, Prototipazione Figma, Identità Visiva e Fotografia.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FF4D2E'/><text x='50%' y='68%' font-size='55' font-weight='900' font-family='sans-serif' fill='%23FFFFFF' text-anchor='middle'>MT</text></svg>">
+
+  <!-- Google Fonts: Bebas Neue, Share Tech Mono, Inter, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="editorial-body">
+
+  <!-- Technical Grid Overlay (Togglable via button) -->
+  <div id="technicalGrid" class="technical-grid-overlay" aria-hidden="true"></div>
+
+  <!-- TOP HEADER / NAV -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-monogram">MT</span>
+        <span class="brand-name">MARTINA TAGLIETTI</span>
+        <span class="brand-sub">PORTFOLIO</span>
+      </a>
+
+      <nav class="nav-links" id="navMenu">
+        <a href="#about" class="nav-link">Chi Sono</a>
+        <a href="#progetti" class="nav-link">Progetti</a>
+        <a href="#vertex" class="nav-link nav-highlight-vertex">Vertex Studio</a>
+        <a href="#logo-aura" class="nav-link nav-highlight-aura">Logo AURA</a>
+        <a href="#fotografia" class="nav-link">Fotografia</a>
+        <a href="#contatti" class="nav-link">Contatti</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="toggleGridBtn" class="action-btn-mono" title="Attiva/Disattiva griglia tipografica" aria-label="Attiva/Disattiva griglia tipografica">
+          <span class="btn-icon">📐</span>
+          <span class="btn-txt">GRID</span>
+        </button>
+
+        <a href="PORTFOLIO_MARTINA_TAGLIETTI.pdf" download class="action-btn-pdf" title="Scarica Portfolio PDF Ufficiale">
+          <span class="pdf-icon">↓</span> PDF
+        </a>
+
+        <div class="status-badge" title="Disponibile per lavoro e collaborazioni">
+          <span class="status-dot"></span>
+          <span class="status-txt">OPEN FOR WORK</span>
+        </div>
+
+        <button id="mobileMenuBtn" class="mobile-toggle" aria-label="Menu Mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION / COPERTINA -->
+    <section id="hero" class="hero-section">
+      <!-- CMYK Top Print Registration Bar -->
+      <div class="print-bar-top">
+        <div class="cmyk-blocks">
+          <span class="cmyk-block c-cyan">C</span>
+          <span class="cmyk-block c-magenta">M</span>
+          <span class="cmyk-block c-yellow">Y</span>
+          <span class="cmyk-block c-black">K</span>
+        </div>
+        <div class="reg-mark crosshair"><span>+</span></div>
+        <div class="tech-coords">PORTFOLIO · GRAFICA &amp; UI/UX DESIGN</div>
+        <div class="reg-mark circle-cross"><span>⊕</span></div>
+        <div class="color-palette-dots">
+          <span style="background: var(--c-orange)"></span>
+          <span style="background: var(--c-blue)"></span>
+          <span style="background: var(--c-yellow)"></span>
+          <span style="background: var(--c-pink)"></span>
+          <span style="background: var(--c-teal)"></span>
+        </div>
+      </div>
+
+      <div class="hero-main">
+        <!-- Iconic Stylized PORTFOLIO Lettering -->
+        <div class="hero-title-wrapper">
+          <h1 class="hero-stylized-title" aria-label="PORTFOLIO">
+            <span class="char-c1">P</span>
+            <span class="char-outline">O</span>
+            <span class="char-c2">R</span>
+            <span class="char-c3">T</span>
+            <span class="char-c4">F</span>
+            <span class="char-outline">O</span>
+            <span class="char-c5">L</span>
+            <span class="char-c1">I</span>
+            <span class="char-c2">O</span>
+          </h1>
+          <div class="hero-name-badge">
+            <span class="name-pill">TAGLIETTI MARTINA</span>
+            <span class="badge-role">GRAFICA &amp; UI/UX DESIGN</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-bar">
+          <a href="#progetti" class="btn-primary-editorial">VEDI I PROGETTI ↓</a>
+          <a href="#contatti" class="btn-secondary-editorial">CONTATTAMI</a>
+          <div class="scroll-indicator">
+            <span class="mouse-icon"></span>
+            <span class="scroll-txt">SCROLL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHI SONO / ABOUT (Pagina 02) -->
+    <section id="about" class="section-editorial about-section">
+      <div class="section-header-tag">
+        <span class="tag-meta">PRESENTAZIONE PERSONALE</span>
+        <span class="tag-page-num">02</span>
+      </div>
+
+      <div class="about-grid">
+        <!-- Photo with Electric Blue Offset Backing -->
+        <div class="about-photo-wrapper">
+          <div class="photo-backing-blue"></div>
+          <div class="photo-frame">
+            <img src="site_assets/martina_portrait.jpg" alt="Ritratto di Martina Taglietti" class="martina-img" loading="lazy">
+            <div class="photo-caption-tag">MARTINA TAGLIETTI · 19 ANNI</div>
+          </div>
+        </div>
+
+        <!-- Bio Content & Stylized Heading -->
+        <div class="about-content">
+          <h2 class="about-stylized-title">
+            <span class="t-ciao">CIAO,</span>
+            <span class="t-sono">SONO</span>
+            <span class="t-martina">MARTINA</span>
+          </h2>
+
+          <div class="about-bio-text">
+            <p class="bio-lead">
+              Ho 19 anni e ho frequentato la <strong>Scuola d'Arte Applicata Andrea Fantoni</strong>.
+            </p>
+            <p>
+              Amo il <strong>trekking</strong> perché mi permette di stare in mezzo alla natura e ai suoi colori, che sono per me una continua fonte di ispirazione.
+            </p>
+            <p>
+              Mi piace viaggiare, fotografare e, soprattutto, <strong>la grafica</strong>: il modo in cui trasformo ciò che vedo in immagini e idee.
+            </p>
+          </div>
+
+          <!-- Passions Pills -->
+          <div class="passions-group">
+            <span class="passion-pill pill-teal">TREKKING</span>
+            <span class="passion-pill pill-yellow">VIAGGI</span>
+            <span class="passion-pill pill-blue">FOTOGRAFIA</span>
+            <span class="passion-pill pill-orange">GRAFICA</span>
+          </div>
+
+          <!-- Software Skills Simple -->
+          <div class="skills-editorial-box">
+            <div class="skills-box-title">PROGRAMMI UTILIZZATI</div>
+            <div class="skills-list-tags">
+              <span class="skill-tag"><strong>Figma</strong> · Prototipazione UI/UX</span>
+              <span class="skill-tag"><strong>Adobe Illustrator</strong> · Grafica Vettoriale &amp; Loghi</span>
+              <span class="skill-tag"><strong>Adobe Photoshop</strong> · Fotoritocco &amp; Mockup</span>
+              <span class="skill-tag"><strong>Lightroom Classic</strong> · Post-produzione Fotografica</span>
+              <span class="skill-tag"><strong>Adobe InDesign</strong> · Impaginazione</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGETTI SHOWCASE (Filterable Grid) -->
+    <section id="progetti" class="section-editorial projects-section">
+      <div class="section-header-tag">
+        <span class="tag-meta">PROGETTI</span>
+        <span class="tag-page-num">WORKS</span>
+      </div>
+
+      <div class="projects-intro-header">
+        <div class="header-left">
+          <h2 class="section-title-big">I MIEI LAVORI</h2>
+          <p class="section-subtitle">Una panoramica sintetica dei progetti realizzati, con cosa sono stati fatti e gli strumenti usati.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls" role="tablist">
+          <button class="filter-btn active" data-filter="all">TUTTI [7]</button>
+          <button class="filter-btn" data-filter="ui-ux">UI/UX &amp; WEB</button>
+          <button class="filter-btn" data-filter="branding">BRANDING &amp; LOGO</button>
+          <button class="filter-btn" data-filter="photo">FOTOGRAFIA</button>
+        </div>
+      </div>
+
+      <!-- PROJECTS GRID -->
+      <div class="projects-catalog-grid" id="projectsGrid">
+
+        <!-- 1. SOUNDGROUND -->
+        <article class="project-card" data-category="ui-ux" data-project="soundground">
+          <div class="card-inner">
+            <div class="card-top-bar">
+              <span class="card-cat-badge">PROGETTO DIGITALE / CPME</span>
+              <span class="card-index">03</span>
+            </div>
+            
+            <div class="card-visual-media">
+              <img src="site_assets/soundground_hero.png" alt="Soundground UI Mockup" class="media-cover" loading="lazy">
+              <div class="visual-hover-overlay">
+                <span class="view-btn">VEDI DETTAGLI +</span>
+              </div>
+            </div>
+
+            <div class="card-content-body">
+              <h3 class="card-title">SOUNDGROUND</h3>
+              <p class="card-desc">
+                <strong>Per cosa è stato fatto:</strong> Concept di una piattaforma musicale dove artisti e produttori possono incontrarsi, condividere tracce e collaborare.<br>
+                <strong>Programmi usati:</strong> Figma, Adobe Illustrator.
+              </p>
+              <div class="card-footer-tags">
+                <span class="tag-chip">Figma</span>
+                <span class="tag-chip">Adobe Illustrator</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. CAMELIA -->
+        <article class="project-card" data-category="branding" data-project="camelia">
+          <div class="card-inner">
+            <div class="card-top-bar">
+              <span class="card-cat-badge">IDENTITÀ VISIVA / MANUALE DEL LOGO</span>
+              <span class="card-index">04</span>
+            </div>
+            
+            <div class="card-visual-media">
+              <img src="site_assets/camelia_cards_mockup.png" alt="Camelia Lago Maggiore Brand Identity" class="media-cover" loading="lazy">
+              <div class="visual-hover-overlay">
+                <span class="view-btn">VEDI DETTAGLI +</span>
+              </div>
+            </div>
+
+            <div class="card-content-body">
+              <h3 class="card-title">CAMELIA · LAGO MAGGIORE</h3>
+              <p class="card-desc">
+                <strong>Per cosa è stato fatto:</strong> Marchio e manuale del logo per una struttura sul Lago Maggiore, con simbolo floreale, palette colori e biglietti da visita.<br>
+                <strong>Programmi usati:</strong> Adobe Illustrator.
+              </p>
+              <div class="card-footer-tags">
+                <span class="tag-chip">Adobe Illustrator</span>
+                <span class="tag-chip">Logo Manual</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. DGM MOTORI -->
+        <article class="project-card" data-category="ui-ux" data-project="dgm">
+          <div class="card-inner">
+            <div class="card-top-bar">
+              <span class="card-cat-badge">PROGETTO DIGITALE / PROTOTIPO WEB &amp; MOBILE</span>
+              <span class="card-index">05</span>
+            </div>
+            
+            <div class="card-visual-media">
+              <img src="site_assets/dgm_laptop_hero.png" alt="DGM Motori Web Prototipo" class="media-cover" loading="lazy">
+              <div class="visual-hover-overlay">
+                <span class="view-btn">VEDI DETTAGLI +</span>
+              </div>
+            </div>
+
+            <div class="card-content-body">
+              <h3 class="card-title">DGM MOTORI</h3>
+              <p class="card-desc">
+                <strong>Per cosa è stato fatto:</strong> Prototipo web e mobile per l'officina DGM Motori, per mostrare i servizi di riparazione e prenotare i tagliandi.<br>
+                <strong>Programmi usati:</strong> Figma, Photoshop, Illustrator.
+              </p>
+              <div class="card-footer-tags">
+                <span class="tag-chip">Figma</span>
+                <span class="tag-chip">Photoshop</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. FORME ESSENZIALI -->
+        <article class="project-card" data-category="ui-ux" data-project="forme-essenziali">
+          <div class="card-inner">
+            <div class="card-top-bar">
+              <span class="card-cat-badge">PROGETTO ACCADEMICO / TEMA D'ESAME</span>
+              <span class="card-index">06</span>
+            </div>
+            
+            <div class="card-visual-media">
+              <img src="site_assets/forme_essenziali_mockup.png" alt="Forme Essenziali Web Prototype" class="media-cover" loading="lazy">
+              <div class="visual-hover-overlay">
+                <span class="view-btn">VEDI DETTAGLI +</span>
+              </div>
+            </div>
+
+            <div class="card-content-body">
+              <h3 class="card-title">FORME ESSENZIALI</h3>
+              <p class="card-desc">
+                <strong>Per cosa è stato fatto:</strong> Tema d'esame scolastico. Brand e prototipo web per un collettivo di artigiani del Made in Italy (ceramica, legno e tessuti).<br>
+                <strong>Programmi usati:</strong> Figma, Adobe Illustrator.
+              </p>
+              <div class="card-footer-tags">
+                <span class="tag-chip">Figma</span>
+                <span class="tag-chip">Adobe Illustrator</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. VERTEX STUDIO -->
+        <article class="project-card project-card-featured" data-category="ui-ux" data-project="vertex">
+          <div class="card-inner card-inner-vertex">
+            <div class="card-top-bar">
+              <span class="card-cat-badge badge-vertex">SITO WEB SPERIMENTALE</span>
+              <span class="card-index">08</span>
+            </div>
+            
+            <div class="card-visual-media">
+              <div class="vertex-card-hero-banner">
+                <img src="site_assets/vertex_logo.png" alt="Vertex Studio Monogram" class="vertex-card-logo">
+                <div class="vertex-card-tech-pills">
+                  <span>TEMPO LIBERO</span>
+                  <span>USO IA + FIGMA</span>
+                </div>
+              </div>
+              <div class="visual-hover-overlay">
+                <span class="view-btn">VEDI VERTEX STUDIO →</span>
+              </div>
+            </div>
+
+            <div class="card-content-body">
+              <div class="title-with-link">
+                <h3 class="card-title">VERTEX STUDIO</h3>
+                <a href="https://vertexstudiolab.github.io/" target="_blank" rel="noopener" class="card-external-link" title="Apri il sito ufficiale">vertexstudiolab.github.io ↗</a>
+              </div>
+              <p class="card-desc">
+                <strong>Per cosa è stato fatto:</strong> Semplicemente un sito realizzato nel tempo libero dove ho combinato l'uso dell'Intelligenza Artificiale a Figma.<br>
+                <strong>Programmi usati:</strong> Figma, Strumenti AI.
+              </p>
+              <div class="card-footer-tags">
+                <span class="tag-chip chip-dark">Figma</span>
+                <span class="tag-chip chip-dark">Intelligenza Artificiale</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. NEW PROJECT: AURA STUDIO LOGO -->
+        <article class="project-card project-card-featured" data-category="branding" data-project="aura">
+          <div class="card-inner card-inner-aura">
+            <div class="card-top-bar">
+              <span class="card-cat-badge badge-aura">NUOVO PROGETTO LOGO DESIGN</span>
+              <span class="card-index">09</span>
+            </div>
+            
+            <div class="card-visual-media">
+              <img src="site_assets/aura_logo_hero_dark.png" alt="AURA Logo Design" class="media-cover" loading="lazy">
+              <div class="visual-hover-overlay">
+                <span class="view-btn">VEDI DETTAGLI LOGO +</span>
+              </div>
+            </div>
+
+            <div class="card-content-body">
+              <h3 class="card-title">AURA · SOUND &amp; SENSORY LAB</h3>
+              <p class="card-desc">
+                <strong>Per cosa è stato fatto:</strong> Progetto di logo geometrico per uno studio di sound design e acustica, con griglia costruttiva e mockup su biglietti da visita.<br>
+                <strong>Programmi usati:</strong> Adobe Illustrator.
+              </p>
+              <div class="card-footer-tags">
+                <span class="tag-chip chip-gold">Adobe Illustrator</span>
+                <span class="tag-chip chip-gold">Logo Design</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. SET FOTOGRAFICO -->
+        <article class="project-card" data-category="photo" data-project="fotografia">
+          <div class="card-inner">
+            <div class="card-top-bar">
+              <span class="card-cat-badge">REPORTAGE FOTOGRAFICO</span>
+              <span class="card-index">07</span>
+            </div>
+            
+            <div class="card-visual-media">
+              <img src="site_assets/foto_dgm_team_hero.jpg" alt="Reportage Officina Meccanica" class="media-cover" loading="lazy">
+              <div class="visual-hover-overlay">
+                <span class="view-btn">VEDI LE FOTO [8 SCATTI] +</span>
+              </div>
+            </div>
+
+            <div class="card-content-body">
+              <h3 class="card-title">SET FOTOGRAFICO OFFICINA DGM</h3>
+              <p class="card-desc">
+                <strong>Per cosa è stato fatto:</strong> Reportage fotografico per raccontare il lavoro manuale, i volti e gli attrezzi dell'officina DGM Motori.<br>
+                <strong>Programmi usati:</strong> Fotocamera Reflex Digitale, Adobe Lightroom Classic.
+              </p>
+              <div class="card-footer-tags">
+                <span class="tag-chip">Fotocamera Reflex</span>
+                <span class="tag-chip">Lightroom Classic</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECTION FOCUS: VERTEX STUDIO LAB (SEMPLICE & DIRETTO) -->
+    <section id="vertex" class="section-editorial vertex-dedicated-section">
+      <div class="section-header-tag dark-tag">
+        <span class="tag-meta">PROGETTO SPERIMENTALE</span>
+        <span class="tag-page-num">08</span>
+      </div>
+
+      <div class="vertex-showcase-box">
+        <div class="vertex-header-flex">
+          <div class="vertex-brand-block">
+            <img src="site_assets/vertex_logo.png" alt="Vertex Studio Logo" class="vertex-main-logo">
+            <div class="vertex-sub-titles">
+              <h2 class="vertex-hero-title">VERTEX STUDIO</h2>
+              <p class="vertex-tagline">Sito web realizzato nel tempo libero combinando l'uso dell'Intelligenza Artificiale a Figma.</p>
+            </div>
+          </div>
+
+          <div class="vertex-cta-action">
+            <a href="https://vertexstudiolab.github.io/" target="_blank" rel="noopener" class="vertex-live-btn">
+              <span>APRI IL SITO VERTEX</span>
+              <span class="btn-arrow">↗</span>
+            </a>
+            <span class="live-url-indicator">https://vertexstudiolab.github.io/</span>
+          </div>
+        </div>
+
+        <div class="vertex-content-grid">
+          <div class="vertex-role-card">
+            <div class="spec-badge">COME È STATO REALIZZATO</div>
+            <h3>SPERIMENTAZIONE &amp; PROTOTIPO</h3>
+            <p>
+              Questo progetto nasce dalla curiosità di esplorare le potenzialità dell'<strong>Intelligenza Artificiale integrata al flusso di lavoro su Figma</strong> nel tempo libero. Ho progettato il layout, le pagine e la grafica in Figma, affiancando l'IA per velocizzare lo sviluppo delle idee e del codice.
+            </p>
+            <p>
+              <strong>Programmi utilizzati:</strong> Figma, Strumenti AI.
+            </p>
+
+            <div class="vertex-preview-figma-box">
+              <div class="preview-header">WORKSPACE FIGMA</div>
+              <img src="site_assets/vertex_figma_preview.jpg" alt="Figma Prototyping Preview Vertex" class="figma-prev-img" loading="lazy">
+            </div>
+          </div>
+
+          <div class="vertex-projects-showcase">
+            <div class="spec-badge">SCHERMATE DEL SITO</div>
+            <h3>FOTO DEL PROGETTO</h3>
+
+            <div class="vertex-mini-grid">
+              <div class="v-mini-item">
+                <img src="site_assets/vertex_tecnometal.jpg" alt="Tecnometal" loading="lazy">
+                <div class="v-mini-info">
+                  <h4>TECNOMETAL</h4>
+                  <p>Layout industriale</p>
+                </div>
+              </div>
+
+              <div class="v-mini-item">
+                <img src="site_assets/vertex_abbigliamento.jpeg" alt="Boutique Fashion" loading="lazy">
+                <div class="v-mini-info">
+                  <h4>FASHION</h4>
+                  <p>E-commerce concept</p>
+                </div>
+              </div>
+
+              <div class="v-mini-item">
+                <img src="site_assets/vertex_pizza.jpeg" alt="Menu Digitale" loading="lazy">
+                <div class="v-mini-info">
+                  <h4>FOOD &amp; PIZZA</h4>
+                  <p>Menù digitale</p>
+                </div>
+              </div>
+
+              <div class="v-mini-item">
+                <img src="site_assets/vertex_socialmedia3d_preview.jpg" alt="Social Media 3D" loading="lazy">
+                <div class="v-mini-info">
+                  <h4>3D SOCIAL</h4>
+                  <p>Contenuti grafici</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION FOCUS: NUOVO PROGETTO LOGO AURA (SEMPLICE & PULITO) -->
+    <section id="logo-aura" class="section-editorial aura-dedicated-section">
+      <div class="section-header-tag">
+        <span class="tag-meta">PROGETTO LOGO DESIGN</span>
+        <span class="tag-page-num">09</span>
+      </div>
+
+      <div class="aura-case-study">
+        <div class="aura-title-row">
+          <div>
+            <h2 class="aura-title">AURA · SOUND &amp; SENSORY LAB</h2>
+            <p class="aura-subtitle">
+              <strong>Per cosa è stato fatto:</strong> Progetto di logo geometrico per uno studio di acustica e sound design.<br>
+              <strong>Programmi usati:</strong> Adobe Illustrator.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3-Column Visual Presentation -->
+        <div class="aura-visual-grid">
+          <div class="aura-card">
+            <div class="aura-card-header">01 · LOGO SU FONDO SCURO</div>
+            <div class="aura-card-img-wrap">
+              <img src="site_assets/aura_logo_hero_dark.png" alt="AURA Logo Scuro" class="zoomable-img" loading="lazy">
+            </div>
+            <div class="aura-card-caption">
+              Onde sonore e monogramma 'A' stilizzato.
+            </div>
+          </div>
+
+          <div class="aura-card">
+            <div class="aura-card-header">02 · GRIGLIA COSTRUTTIVA</div>
+            <div class="aura-card-img-wrap">
+              <img src="site_assets/aura_construction_grid.png" alt="AURA Griglia Costruttiva" class="zoomable-img" loading="lazy">
+            </div>
+            <div class="aura-card-caption">
+              Costruzione geometrica con cerchi e raggi proporzionali.
+            </div>
+          </div>
+
+          <div class="aura-card">
+            <div class="aura-card-header">03 · MOCKUP BIGLIETTI DA VISITA</div>
+            <div class="aura-card-img-wrap">
+              <img src="site_assets/aura_stationery_mockup.png" alt="AURA Biglietti da Visita" class="zoomable-img" loading="lazy">
+            </div>
+            <div class="aura-card-caption">
+              Applicazione su carta cotone con stampa a caldo.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION FOCUS: SET FOTOGRAFICO (GALLERIA FOTO PULITA) -->
+    <section id="fotografia" class="section-editorial photo-dedicated-section">
+      <div class="section-header-tag">
+        <span class="tag-meta">REPORTAGE FOTOGRAFICO</span>
+        <span class="tag-page-num">07</span>
+      </div>
+
+      <div class="photo-intro-flex">
+        <div>
+          <h2 class="section-title-big">SET FOTOGRAFICO · OFFICINA DGM</h2>
+          <p class="section-subtitle">
+            <strong>Per cosa è stato fatto:</strong> Reportage fotografico per raccontare il lavoro manuale, i volti e gli attrezzi dell'officina DGM Motori.<br>
+            <strong>Programmi usati:</strong> Fotocamera Reflex Digitale, Adobe Lightroom Classic.
+          </p>
+        </div>
+      </div>
+
+      <!-- PHOTO MASONRY / GRID WITH LIGHTBOX -->
+      <div class="photo-gallery-grid">
+        <div class="photo-tile tile-wide" data-src="site_assets/foto_dgm_team_hero.jpg" data-caption="DGM TEAM — Il team dell'officina.">
+          <img src="site_assets/foto_dgm_team_hero_thumb.jpg" alt="DGM Team" loading="lazy">
+          <div class="photo-tile-overlay">
+            <span class="tile-tag">DGM TEAM</span>
+            <span class="zoom-icon">🔍 INGRANDISCI</span>
+          </div>
+        </div>
+
+        <div class="photo-tile tile-wide" data-src="site_assets/foto_dgm_attrezzatura.jpg" data-caption="ATTREZZATURA — Parete attrezzi da lavoro.">
+          <img src="site_assets/foto_dgm_attrezzatura_thumb.jpg" alt="Pannello attrezzi" loading="lazy">
+          <div class="photo-tile-overlay">
+            <span class="tile-tag">ATTREZZATURA</span>
+            <span class="zoom-icon">🔍 INGRANDISCI</span>
+          </div>
+        </div>
+
+        <div class="photo-tile tile-tall" data-src="site_assets/foto_dgm_motore_dettaglio.jpg" data-caption="LAVORO MOTORE — Dettaglio sul motore.">
+          <img src="site_assets/foto_dgm_motore_dettaglio_thumb.jpg" alt="Lavoro motore" loading="lazy">
+          <div class="photo-tile-overlay">
+            <span class="tile-tag">MOTORE</span>
+            <span class="zoom-icon">🔍 INGRANDISCI</span>
+          </div>
+        </div>
+
+        <div class="photo-tile tile-tall" data-src="site_assets/foto_dgm_ponte_sollevatore.jpg" data-caption="PONTE SOLLEVATORE — Ispezione veicolo.">
+          <img src="site_assets/foto_dgm_ponte_sollevatore_thumb.jpg" alt="Ponte sollevatore" loading="lazy">
+          <div class="photo-tile-overlay">
+            <span class="tile-tag">PONTE SOLLEVATORE</span>
+            <span class="zoom-icon">🔍 INGRANDISCI</span>
+          </div>
+        </div>
+
+        <div class="photo-tile tile-tall" data-src="site_assets/foto_dgm_diagnostica.jpg" data-caption="DIAGNOSTICA — Controllo elettronico.">
+          <img src="site_assets/foto_dgm_diagnostica_thumb.jpg" alt="Diagnosi auto" loading="lazy">
+          <div class="photo-tile-overlay">
+            <span class="tile-tag">DIAGNOSTICA</span>
+            <span class="zoom-icon">🔍 INGRANDISCI</span>
+          </div>
+        </div>
+
+        <div class="photo-tile tile-tall" data-src="site_assets/foto_dgm_freni_meccanica.jpg" data-caption="FRENI — Impianto frenante.">
+          <img src="site_assets/foto_dgm_freni_meccanica_thumb.jpg" alt="Freni e ruote" loading="lazy">
+          <div class="photo-tile-overlay">
+            <span class="tile-tag">FRENI</span>
+            <span class="zoom-icon">🔍 INGRANDISCI</span>
+          </div>
+        </div>
+
+        <div class="photo-tile tile-tall" data-src="site_assets/foto_dgm_vano_motore.jpg" data-caption="VANO MOTORE — Panoramica componenti.">
+          <img src="site_assets/foto_dgm_vano_motore_thumb.jpg" alt="Vano motore" loading="lazy">
+          <div class="photo-tile-overlay">
+            <span class="tile-tag">VANO MOTORE</span>
+            <span class="zoom-icon">🔍 INGRANDISCI</span>
+          </div>
+        </div>
+
+        <div class="photo-tile tile-tall" data-src="site_assets/foto_dgm_lavoro_manuale.jpg" data-caption="LAVORO MANUALE — Precisione con gli attrezzi.">
+          <img src="site_assets/foto_dgm_lavoro_manuale_thumb.jpg" alt="Lavoro manuale" loading="lazy">
+          <div class="photo-tile-overlay">
+            <span class="tile-tag">LAVORO MANUALE</span>
+            <span class="zoom-icon">🔍 INGRANDISCI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTATTI (Pagina 09/10) -->
+    <section id="contatti" class="section-editorial contact-section">
+      <div class="section-header-tag">
+        <span class="tag-meta">CONTATTI</span>
+        <span class="tag-page-num">10</span>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: Editorial intro & competencies -->
+        <div class="contact-left-info">
+          <h2 class="contact-stylized-title">
+            <span class="c-char-1">C</span>
+            <span class="c-char-2">O</span>
+            <span class="c-char-3">N</span>
+            <span class="c-char-4">T</span>
+            <span class="c-char-5">A</span>
+            <span class="c-char-6">T</span>
+            <span class="c-char-7">T</span>
+            <span class="c-char-8">I</span>
+          </h2>
+
+          <div class="contact-editorial-text">
+            <p class="lead-p">
+              Grazie per aver visitato il mio portfolio!
+            </p>
+            <p>
+              Se hai un progetto da realizzare o un'opportunità lavorativa, puoi scrivermi o chiamarmi direttamente.
+            </p>
+          </div>
+
+          <div class="pdf-download-card">
+            <div class="pdf-card-content">
+              <h4>SCARICA IL PORTFOLIO IN PDF</h4>
+              <p>Documento completo a 10 pagine per la visione offline.</p>
+            </div>
+            <a href="PORTFOLIO_MARTINA_TAGLIETTI.pdf" download class="btn-download-pdf-large">
+              <span>SCARICA PDF</span> ↓
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: 4 Direct Contact Cards + Interactive Form -->
+        <div class="contact-right-cards">
+          <div class="cards-duo-grid">
+            <!-- Card 1: Telefono -->
+            <a href="tel:+393206416722" class="c-card c-card-orange">
+              <div class="c-card-bar"></div>
+              <span class="c-label">TELEFONO / WHATSAPP</span>
+              <span class="c-val">+39 320 641 6722</span>
+              <span class="c-sub">Chiamate e WhatsApp</span>
+            </a>
+
+            <!-- Card 2: Email -->
+            <div class="c-card c-card-blue email-copy-card" id="emailCard" data-email="tagliettimartina06@gmail.com">
+              <div class="c-card-bar"></div>
+              <span class="c-label">EMAIL</span>
+              <span class="c-val email-val">tagliettimartina06@gmail.com</span>
+              <div class="copy-hint">
+                <span class="hint-txt">Clicca per copiare</span>
+                <span class="copy-badge">COPIA 📋</span>
+              </div>
+            </div>
+
+            <!-- Card 3: Localizzazione -->
+            <div class="c-card c-card-yellow">
+              <div class="c-card-bar"></div>
+              <span class="c-label">DOVE MI TROVO</span>
+              <span class="c-val">Urgnano (Bergamo) · Milano</span>
+              <span class="c-sub">In presenza e da remoto</span>
+            </div>
+
+            <!-- Card 4: Formazione -->
+            <div class="c-card c-card-pink">
+              <div class="c-card-bar"></div>
+              <span class="c-label">FORMAZIONE</span>
+              <span class="c-val">Scuola d'Arte Applicata Andrea Fantoni</span>
+              <span class="c-sub">Diploma in Grafica &amp; Visual Design</span>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <form id="contactForm" class="contact-message-form" onsubmit="event.preventDefault(); handleFormSubmit();">
+            <div class="form-title">SCRIVIMI UN MESSAGGIO</div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="nameInput">NOME *</label>
+                <input type="text" id="nameInput" required placeholder="Il tuo nome">
+              </div>
+              <div class="form-field">
+                <label for="emailInput">EMAIL *</label>
+                <input type="email" id="emailInput" required placeholder="La tua email">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="projectTypeSelect">MOTIVO DEL CONTATTO</label>
+              <select id="projectTypeSelect">
+                <option value="Colloquio / Opportunità lavorativa">Colloquio Conoscitivo / Stage</option>
+                <option value="UI/UX & Prototipazione Figma">Progetto UI/UX / Figma</option>
+                <option value="Brand Identity & Logo Design">Logo Design / Grafica</option>
+                <option value="Altro">Altro</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="messageInput">MESSAGGIO *</label>
+              <textarea id="messageInput" rows="3" required placeholder="Scrivi qui il tuo messaggio..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit-message">
+              <span>INVIA EMAIL</span> →
+            </button>
+            <div id="formFeedback" class="form-feedback-msg" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Simple Design Quote -->
+      <div class="design-quote-banner">
+        <p class="quote-text">
+          “Il design non è solo ciò che appare e si percepisce. Il design è come funziona.”
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="f-brand">MARTINA TAGLIETTI</span>
+        <span class="f-desc">Grafica &amp; UI/UX</span>
+        <span class="f-copy">© 2026 Martina Taglietti.</span>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#hero">Inizio</a>
+        <a href="#about">Chi Sono</a>
+        <a href="#progetti">Progetti</a>
+        <a href="#vertex">Vertex Studio</a>
+        <a href="#logo-aura">Logo AURA</a>
+        <a href="#fotografia">Fotografia</a>
+        <a href="#contatti">Contatti</a>
+      </div>
+
+      <div class="footer-right">
+        <button id="backToTopBtn" class="back-to-top" title="Torna in cima">
+          <span>TORNA IN CIMA ↑</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FULLSCREEN IMAGE LIGHTBOX -->
+  <div id="imageLightbox" class="lightbox-backdrop" aria-hidden="true" role="dialog">
+    <div class="lightbox-container">
+      <button id="closeLightboxBtn" class="lightbox-close" aria-label="Chiudi">✕</button>
+      <div class="lightbox-media-wrapper">
+        <img id="lightboxImg" src="" alt="Dettaglio a schermo intero">
+      </div>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+      <div class="lightbox-nav-buttons">
+        <button id="prevLightboxBtn" class="lb-nav-btn prev-btn" aria-label="Precedente">←</button>
+        <button id="nextLightboxBtn" class="lb-nav-btn next-btn" aria-label="Successiva">→</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT DETAIL MODAL / DRAWER -->
+  <div id="projectModal" class="project-modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="project-modal-dialog">
+      <button id="closeModalBtn" class="modal-close-btn" aria-label="Chiudi">✕</button>
+      <div class="modal-body" id="modalDynamicBody">
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toastNotification" class="toast-box" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
